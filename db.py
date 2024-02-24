@@ -8,4 +8,4 @@ def db_init(app):
 
     # Creates the tables if the db doesnt already exist
     with app.app_context():
-        db.create_all()
+        db.create_all() 

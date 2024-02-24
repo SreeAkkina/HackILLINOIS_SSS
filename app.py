@@ -30,7 +30,7 @@ def upload():
 
     return 'Img has been uploaded!', 200
 
-@app.route('/<int:id>')
+@app.route('/<int:id>') 
 def get_img(id):
     img = Img.query.filter_by(id=id).first()
     if not img:
